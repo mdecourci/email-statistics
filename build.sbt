@@ -3,6 +3,11 @@ import Keys._
 
 name := "email-statistics"
 
+
+//mainClass := Some("com.service.email.Emailer")
+
+mainClass in(Compile, packageBin) := Some("com.service.email.Emailer")
+
 version := "1.0"
 
 scalaVersion := "2.11.7"
