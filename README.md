@@ -19,12 +19,18 @@
   * `sudo mkdir mount_point` - make directory - ie /vol
   * Mount: - `sudo mount device_name mount_point`
  * Check "df" shows mount
+ * scp sample Enron files to local disk
 
 ### Get code from Git repo 
 `git clone git@github.com:mdecourci/email-statistics.git`
+cd email-statistics
+*  To build the jar file run then run the jar file
+sbt assembly
 
 ### Test
 Verify code by checking for "To" email recipients that have the address "enron.com"
+
+Copy scp'd enron files to `/email-statistics/src/test/resources`
 
 Check "enron.com" exists in test data files;
 
